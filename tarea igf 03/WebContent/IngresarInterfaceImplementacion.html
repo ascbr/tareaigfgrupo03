@@ -2,9 +2,51 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Ingresar Interface de Implementacion</title>
+<link rel="stylesheet" href="foundation/css/foundation.css">
 </head>
 <body>
+
+<p>
+<form action="IngresarInterfaceImplementacion.jsp" method="post">
+<fieldset>
+<legend>Ingresa la informacion correspondiente a la Interface de implementacion </legend>
+
+<div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo de la interface de implementacion:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el codigo de la interface de implementacion" name="c_interface_implementa" required>
+</div>
+ </div>
+ <div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo de la interface de implementacion padre:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el codigo de la interface de implementacion" name="c_interface_padre" required>
+</div>
+ </div>
+ 
+<div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo de la interface de implementacion hijo:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el codigo de la interface de implementacion hijo" name="c_interface_hijo" required>
+</div>
+ </div>
+ 
+
+
+<input type = "submit" role="button" aria-label="submit form" value="Ingresar Interface Implementacion" class="button">
+        <a role="button" aria-label="submit form" href="Main.jsp" class="button">Volver al menu</a>
+</div>
+<br>
+<br>
+</fieldset>
+</form>
 
 </body>
 </html>

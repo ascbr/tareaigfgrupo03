@@ -2,9 +2,59 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Actualizar Interface</title>
+<link rel="stylesheet" href="foundation/css/foundation.css">
 </head>
 <body>
 
+<p>
+<form action="ActualizarInterface.jsp" method="post">
+<fieldset>
+<legend>Actualiza la informacion correspondiente a la Interface</legend>
+
+<div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo de la interface:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el codigo de la interface" name="c_interface" required>
+</div>
+ </div>
+ <div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Fecha de Ingreso:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar la fecha de ingreso" name="f_ingreso" required>
+</div>
+ </div>
+ 
+<div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Nombre de usuario:</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el nombre del usuario" name="c_usuario required>
+</div>
+ </div>
+ 
+
+<div class="row">
+ <div class="small-3 columns">
+          <label for="right-label" class="right inline">Diseño de interface</label>
+        </div>
+<div class="small-9 columns">
+<input type="text" id="right-label" placeholder="Digitar el diseño de la interface" name="d_interface" required>
+</div>
+	
+<input type = "submit" role="button" aria-label="submit form" value="Actualizar Interface" class="button">
+        <a role="button" aria-label="submit form" href="Main.jsp" class="button">Volver al menu</a>
+</div>
+<br>
+<br>
+</fieldset>
+</form>
+
 </body>
 </html>
+ 
