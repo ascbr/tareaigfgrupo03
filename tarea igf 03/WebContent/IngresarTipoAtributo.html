@@ -2,9 +2,77 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Ingresar Aplicativo</title>
+<link rel="stylesheet" href="foundation/css/foundation.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	$.datepicker.regional['es'] = {
+			 closeText: 'Cerrar',
+			 prevText: '<Ant',
+			 nextText: 'Sig>',
+			 currentText: 'Hoy',
+			 monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			 monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+			 dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+			 dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+			 dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+			 weekHeader: 'Sm',
+			 dateFormat: 'dd/mm/yy',
+			 firstDay: 1,
+			 isRTL: false,
+			 showMonthAfterYear: false,
+			 yearSuffix: ''
+			 };
+			 $.datepicker.setDefaults($.datepicker.regional['es']);
+    $( "#campofecha" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        
+      });
+  });
+	</script>
+	
 </head>
 <body>
-
+<form action="IngresarAplicativo.jsp" method="post">
+<fieldset>
+<legend>Ingresa nuevo Aplicativo</legend>
+  <div class="row">
+    <div class="small-8">
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo Aplicativo</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="right-label" placeholder="c_aplicativo" name="c_aplicativo" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label" class="right inline">Descripcion del Aplicativo</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="right-label" placeholder="d_aplicativo" name="d_aplicativo" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label" class="right inline">Fecha de Ingreso</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="campofecha" placeholder="f_ingreso" name="f_ingreso"  size="12" required>
+        </div>
+      
+        <input type = "submit" role="button" aria-label="submit form" value="Ingresar Aplicativo" class="button">
+        <a role="button" aria-label="submit form" href="Main.jsp" class="button">Volver al menu</a>
+      </div>
+    </div>
+  </div>      
+</fieldset>
+</form>
 </body>
 </html>

@@ -2,9 +2,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Borrar tipo Atributo</title>
+<link rel="stylesheet" href="foundation/css/foundation.css">
 </head>
 <body>
-
+<form action="BorrarTipoAtributo.jsp" method="post">
+<fieldset>
+<legend>Eliminar Tipo Atributo</legend>
+  <div class="row">
+    <div class="small-8">
+      <div class="row">
+        <div class="small-3 columns">
+          <label for="right-label" class="right inline">Codigo Tipo Atributo a eliminar</label>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" id="right-label" placeholder="c_tipo_atributo" name="c_tipo_atributo" required>
+        </div>
+        <input type = "submit" role="button" aria-label="submit form" value="Ver Tipo Atibuto" class="button">
+        <a role="button" aria-label="submit form" href="Main.jsp" class="button">Volver al menu</a>
+      </div>
+    </div>
+  </div>      
+</fieldset>
+</form>
 </body>
 </html>

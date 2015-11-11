@@ -59,12 +59,4 @@ public class AS_interface_implementacion {
 		this.c_interface_hijo = c_interface_hijo;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }
